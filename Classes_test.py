@@ -69,11 +69,10 @@ def test_recipe_scale_invalid_ratio():
         recipe.scale(-5)
 
 def test_recipe_len():
-    recipe = Recipe("Пицца", [
-        Ingredient("Мука", 500.0, "г"),
-        Ingredient("Сахар", 10.0, "г"),
-        Ingredient("Мука", 100.0, "г")
-    ])
+    recipe = Recipe("Пицца")
+    recipe.add_ingredient(Ingredient("Мука", 500.0, "г"))
+    recipe.add_ingredient(Ingredient("Сахар", 10.0, "г"))
+    recipe.add_ingredient(Ingredient("Мука", 100.0, "г"))
     assert len(recipe) == 2
 
 
