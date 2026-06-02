@@ -4,7 +4,7 @@ To download project you should enter the next commands at the command line:
 
 ```bash
 git clone https://github.com/Vadimka217/Programming-technologies-HW2.git
-cd HW2_OOP_Testing_Git
+cd Programming-technologies-HW2
 ```
 
 To run tests, you need to install Pytest using the following command:
